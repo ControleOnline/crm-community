@@ -76,9 +76,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.controleonline.checkout"
+    namespace "com.controleonline.crm"
     defaultConfig {
-        applicationId "com.controleonline.checkout"
+        applicationId "com.controleonline.crm"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode

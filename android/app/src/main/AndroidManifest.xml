@@ -28,7 +28,7 @@
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
         <data
-          android:host="CHECKOUT"
+          android:host="CRM"
           android:scheme="@string/schema_return" />
       </intent-filter>
     </activity>

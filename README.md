@@ -1,8 +1,8 @@
-# CHECKOUT Controle Online
+# CRM Controle Online
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/controleonline/checkout-community/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/controleonline/checkout-community/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/controleonline/crm-community/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/controleonline/crm-community/?branch=master)
 
-<a href="https://github.com/ControleOnline/checkout-community" target="_blank">
+<a href="https://github.com/ControleOnline/crm-community" target="_blank">
   <img src="https://www.cielo.com.br/assets_cielo/cielo_store/features/mobile/cielo-lio.png" />
 </a>
 
@@ -31,8 +31,8 @@ git submodule update --recursive
 
 ### Top contributors
 
-<a href="https://github.com/ControleOnline/checkout-community/graphs/contributors" target="_blank">
-  <img src="https://contrib.rocks/image?repo=ControleOnline/checkout-community" />
+<a href="https://github.com/ControleOnline/crm-community/graphs/contributors" target="_blank">
+  <img src="https://contrib.rocks/image?repo=ControleOnline/crm-community" />
 </a>
 
 
