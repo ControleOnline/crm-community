@@ -1,0 +1,30 @@
+[submodule "modules/controleonline/ui-orders"]
+	path = modules/controleonline/ui-orders
+	url = https://github.com/ControleOnline/ui-orders.git
+[submodule "modules/controleonline/ui-shop"]
+	path = modules/controleonline/ui-shop
+	url = https://github.com/ControleOnline/ui-shop.git
+[submodule "modules/controleonline/ui-default"]
+	path = modules/controleonline/ui-default
+	url = https://github.com/ControleOnline/ui-default.git
+[submodule "modules/controleonline/ui-products"]
+	path = modules/controleonline/ui-products
+	url = https://github.com/ControleOnline/ui-products.git
+[submodule "modules/controleonline/ui-login"]
+	path = modules/controleonline/ui-login
+	url = https://github.com/ControleOnline/ui-login.git
+[submodule "modules/controleonline/ui-common"]
+	path = modules/controleonline/ui-common
+	url = https://github.com/ControleOnline/ui-common.git
+[submodule "modules/controleonline/ui-layout"]
+	path = modules/controleonline/ui-layout
+	url = https://github.com/ControleOnline/ui-layout.git
+[submodule "modules/controleonline/ui-people"]
+	path = modules/controleonline/ui-people
+	url = https://github.com/ControleOnline/ui-people.git
+[submodule "modules/controleonline/ui-financial"]
+	path = modules/controleonline/ui-financial
+	url = https://github.com/ControleOnline/ui-financial.git
+[submodule "modules/controleonline/ui-translate"]
+	path = modules/controleonline/ui-translate
+	url = https://github.com/ControleOnline/ui-translate.git
