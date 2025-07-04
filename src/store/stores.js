@@ -2,6 +2,8 @@ import acl from '@controleonline/ui-common/src/store/acl';
 import categories from '@controleonline/ui-common/src/store/categories';
 import city from '@controleonline/ui-common/src/store/address/city';
 import configs from '@controleonline/ui-common/src/store/configs';
+import contract from '@controleonline/ui-contracts/src/store/contract';
+
 import file from '@controleonline/ui-common/src/store/file';
 import status from '@controleonline/ui-common/src/store/status';
 import device from '@controleonline/ui-common/src/store/device';
@@ -38,6 +40,7 @@ export default {
   categories,
   city,
   configs,
+  contract,
   file,
   device,
   device_config,

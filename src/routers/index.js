@@ -4,6 +4,7 @@ import crmRoutes from '@controleonline/ui-crm/src/react/router/routes';
 import commonRoutes from '@controleonline/ui-common/src/react/router/routes';
 import peopleRoutes from '@controleonline/ui-people/src/react/router/routes';
 import customersRoutes from '@controleonline/ui-customers/src/react/router/routes';
+import contractRoutes from '@controleonline/ui-contracts/src/react/router/routes';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +14,7 @@ const allRoutes = [
   ...commonRoutes,
   ...peopleRoutes,
   ...customersRoutes,
+  ...contractRoutes,
 ];
 
 export default function Routes() {

@@ -37,3 +37,6 @@
 [submodule "modules/controleonline/ui-customers"]
 	path = modules/controleonline/ui-customers
 	url = https://github.com/ControleOnline/ui-customers.git
+[submodule "modules/controleonline/ui-contracts"]
+	path = modules/controleonline/ui-contracts
+	url = https://github.com/ControleOnline/ui-contracts.git
