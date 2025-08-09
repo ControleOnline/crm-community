@@ -3,7 +3,13 @@ def env = new Properties()
 if (androidPropertiesFile.exists()) {
     env.load(new FileInputStream(androidPropertiesFile))
 } else {
-    throw new GradleException("Arquivo keystore.properties não encontrado em: ${androidPropertiesFile.absolutePath}")
+    // Set default values for development
+    env["MYAPP_UPLOAD_STORE_FILE"] = ""
+    env["MYAPP_UPLOAD_KEY_ALIAS"] = ""
+    env["MYAPP_UPLOAD_STORE_PASSWORD"] = ""
+    env["MYAPP_UPLOAD_KEY_PASSWORD"] = ""
+    env["VERSION_CODE"] = "1"
+    env["VERSION_NAME"] = "1.0.0"
 }
 
 project.ext {
