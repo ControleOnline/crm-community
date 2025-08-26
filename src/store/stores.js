@@ -38,6 +38,7 @@ import walletPaymentType from '@controleonline/ui-financial/src/store/walletPaym
 import users from '@controleonline/ui-users/src/store/users';
 import tasks from '@controleonline/ui-tasks/src/store/tasks';
 import tasksInterations from '@controleonline/ui-tasks/src/store/task_interations';
+import models from '@controleonline/ui-crm/src/store/model';
 
 export default {
   acl,
@@ -78,4 +79,5 @@ export default {
   documentsTypes,
   contract_peoples,
   tasksInterations,
+  models,
 };
