@@ -77,6 +77,10 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     namespace "com.controleonline.crm"
+    
+    buildFeatures {
+        buildConfig true
+    }
     defaultConfig {
         applicationId "com.controleonline.crm"
         minSdkVersion rootProject.ext.minSdkVersion
