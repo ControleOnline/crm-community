@@ -12,6 +12,10 @@ const config = {
     extraNodeModules: {
       '@store': path.resolve(__dirname, 'src/store'),
       '@controleonline': path.resolve(__dirname, 'modules/controleonline'),
+      '@controleonline-rn': path.resolve(
+        __dirname,
+        'node_modules/@controleonline',
+      ),
     },
   },
 };

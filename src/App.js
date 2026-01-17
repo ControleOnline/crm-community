@@ -5,8 +5,12 @@ import Routes from './routers';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {api} from '@controleonline/ui-common/src/api';
 import {DefaultProvider} from '@controleonline/ui-common/src/react/components/DefaultProvider';
-import {StoreProvider} from '@store';
+//import {StoreProvider} from '@store';
 import CheckLogin from '@controleonline/ui-login/src/react/components/CheckLogin';
+import {PaperProvider} from 'react-native-paper';
+import {MessageProvider} from '@controleonline/ui-common/src/react/components/MessageService';
+//import TouchSoundProvider from '@controleonline/ui-common/src/react/components/TouchSoundProvider';
+//import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
 const createLocalStorageSync = async () => {
   let store = {};
@@ -25,7 +29,7 @@ const createLocalStorageSync = async () => {
     getItem: key => {
       let value = store[key];
       const cleanString =
-        typeof value == 'string' && value.startsWith('__q_objt|')
+        typeof value === 'string' && value.startsWith('__q_objt|')
           ? value.substring('__q_objt|'.length)
           : value;
 
@@ -73,14 +77,25 @@ export default function App() {
   }
 
   return (
-    <StoreProvider>
-      <DefaultProvider>
-        <NavigationContainer onReady={() => setNavigationReady(true)}>
-          <StatusBar barStyle={'light-content'} backgroundColor={'#1B5587'} />
-          {navigationReady && <CheckLogin />}
-          <Routes />
-        </NavigationContainer>
-      </DefaultProvider>
-    </StoreProvider>
+    //<GestureHandlerRootView style={{flex: 1}}>
+    //  <TouchSoundProvider>
+    //<StoreProvider>
+      <PaperProvider>
+        <MessageProvider>
+          <DefaultProvider>
+            <NavigationContainer onReady={() => setNavigationReady(true)}>
+              <StatusBar
+                barStyle={'light-content'}
+                backgroundColor={'#1B5587'}
+              />
+              {navigationReady && <CheckLogin />}
+              <Routes />
+            </NavigationContainer>
+          </DefaultProvider>
+        </MessageProvider>
+      </PaperProvider>
+    //</StoreProvider>
+    //</TouchSoundProvider>
+    //</GestureHandlerRootView>
   );
 }
