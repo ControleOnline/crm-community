@@ -1,4 +1,54 @@
 {
-  "name": "CRM",
-  "displayName": "CRM Controle Online"
+  "expo": {
+    "name": "CRM",
+    "displayName": "CRM Controle Online",
+    "slug": "crm-controle-online",
+    "version": "xxx",
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
+    "jsEngine": "hermes",
+    "icon": "./src/assets/icon.png",
+    "splash": {
+      "image": "./src/assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "jsEngine": "hermes",
+      "bundleIdentifier": "com.controleonline.pos",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Necessário para processamento de áudio no PDV.",
+        "NSAppleMusicUsageDescription": "Necessário para emitir alertas sonoros de venda."
+      }
+    },
+    "android": {
+      "jsEngine": "hermes",
+      "package": "com.controleonline.pos",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "VIBRATE",
+        "RECORD_AUDIO",
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "plugins": [
+      "expo-build-properties",
+      "expo-asset",
+      "expo-font",
+      "expo-audio",
+      "expo-video"
+    ]
+  }
 }

@@ -2,9 +2,6 @@ import acl from '@controleonline/ui-common/src/store/acl';
 import categories from '@controleonline/ui-common/src/store/categories';
 import city from '@controleonline/ui-common/src/store/address/city';
 import configs from '@controleonline/ui-common/src/store/configs';
-import contract from '@controleonline/ui-contracts/src/store/contract';
-import contract_peoples from '@controleonline/ui-contracts/src/store/contract/contract_people';
-
 import file from '@controleonline/ui-common/src/store/file';
 import status from '@controleonline/ui-common/src/store/status';
 import device from '@controleonline/ui-common/src/store/device';
@@ -26,8 +23,6 @@ import product_group_feedstock from '@controleonline/ui-products/src/store/produ
 import theme from '@controleonline/ui-layout/src/store/theme';
 import address from '@controleonline/ui-people/src/store/address';
 import documents from '@controleonline/ui-people/src/store/documents';
-import documentsTypes from '@controleonline/ui-people/src/store/documents/documentsTypes';
-
 import phones from '@controleonline/ui-people/src/store/phones';
 import emails from '@controleonline/ui-people/src/store/emails';
 import people from '@controleonline/ui-people/src/store/people';
@@ -35,10 +30,6 @@ import invoice from '@controleonline/ui-financial/src/store/invoice';
 import paymentType from '@controleonline/ui-financial/src/store/paymentType';
 import wallet from '@controleonline/ui-financial/src/store/wallet';
 import walletPaymentType from '@controleonline/ui-financial/src/store/walletPaymentType';
-import users from '@controleonline/ui-users/src/store/users';
-import tasks from '@controleonline/ui-tasks/src/store/tasks';
-import tasksInterations from '@controleonline/ui-tasks/src/store/task_interations';
-import models from '@controleonline/ui-crm/src/store/model';
 
 export default {
   acl,
@@ -47,7 +38,6 @@ export default {
   categories,
   city,
   configs,
-  contract,
   file,
   device,
   device_config,
@@ -74,10 +64,4 @@ export default {
   paymentType,
   wallet,
   walletPaymentType,
-  users,
-  tasks,
-  documentsTypes,
-  contract_peoples,
-  tasksInterations,
-  models,
 };

@@ -1,9 +1,7 @@
-/**
- * @format
- */
+import '@controleonline/ui-common/src/react/localStorage';
 
-import {AppRegistry} from 'react-native';
+import React from 'react';
 import App from './src/App';
-import {name as appName} from './app.json';
+import { registerRootComponent } from 'expo';
 
-AppRegistry.registerComponent(appName, () => App);
+registerRootComponent(App);
