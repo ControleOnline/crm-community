@@ -1,4 +1,4 @@
-package com.controleonline.pos
+package com.controleonline.crm
 
 import android.app.Application
 import android.content.res.Configuration
