@@ -1,6 +1,6 @@
 {
   "name": "pos",
-  "version": "1.0.152",
+  "version": "1.0.5",
   "private": true,
   "scripts": {
     "android": "expo run:android",

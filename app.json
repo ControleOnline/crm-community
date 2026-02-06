@@ -3,7 +3,7 @@
     "name": "CRM",
     "displayName": "CRM Controle Online",
     "slug": "crm-controle-online",
-    "version": "xxx",
+    "version": "1.0.5",
     "platforms": [
       "android",
       "ios",
