@@ -1,0 +1,41 @@
+import java.util.Properties
+import groovy.json.JsonSlurper
+
+gradle.afterProject { project ->
+    if (!project.plugins.hasPlugin("com.android.application")) return
+
+    def android = project.extensions.findByName("android")
+    if (!android) return
+
+    def rootDir = project.rootProject.projectDir
+
+    def envFile = new File(rootDir, "../config/android/env.properties")
+    def env = new Properties()
+    if (envFile.exists()) {
+        envFile.withInputStream { env.load(it) }
+    }
+
+    def packageFile = new File(rootDir, "../package.json")
+    if (!packageFile.exists()) return
+
+    def pkg = new JsonSlurper().parse(packageFile)
+
+    android.signingConfigs.maybeCreate("release").with {
+        storeFile file(env["MYAPP_UPLOAD_STORE_FILE"])
+        storePassword env["MYAPP_UPLOAD_STORE_PASSWORD"]
+        keyAlias env["MYAPP_UPLOAD_KEY_ALIAS"]
+        keyPassword env["MYAPP_UPLOAD_KEY_PASSWORD"]
+    }
+
+    android.buildTypes.release.signingConfig = android.signingConfigs.release
+
+    android.defaultConfig.versionName = pkg.version
+
+    def parts = pkg.version.tokenize('.').collect { it.toInteger() }
+    while (parts.size() < 3) parts << 0
+
+    android.defaultConfig.versionCode =
+        (parts[0] * 100000) +
+        (parts[1] * 1000) +
+        parts[2]
+}
