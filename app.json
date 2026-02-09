@@ -3,16 +3,15 @@
     "name": "CRM",
     "displayName": "CRM Controle Online",
     "slug": "crm-controle-online",
-    "version": "1.0.13",
     "platforms": [
       "android",
       "ios",
       "web"
     ],
     "jsEngine": "hermes",
-    "icon": "./src/assets/icon.png",
+    "icon": "./src/assets/logo.png",
     "splash": {
-      "image": "./src/assets/splash-icon.png",
+      "image": "./src/assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -30,26 +29,25 @@
       "package": "com.controleonline.crm",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/logo.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
       "permissions": [
         "VIBRATE",
-        "RECORD_AUDIO",
         "INTERNET"
       ]
     },
     "web": {
-      "favicon": "./src/assets/favicon.png"
+      "favicon": "./src/assets/logo.png"
     },
     "plugins": [
       "expo-build-properties",
       "expo-asset",
       "expo-font",
+      "react-native-iap",
       "expo-audio",
-      "expo-video",
-      "react-native-iap"
+      "expo-video"
     ]
   }
 }
